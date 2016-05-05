@@ -6,7 +6,7 @@ exports.loadAllItems = function () {
         },
         {
             number:1,
-            lcdNumber:['...','..|','..| ']
+            lcdNumber:['...','..|','..|']
         },
         {
             number:2,

@@ -17,7 +17,7 @@ function findLcdNumber(splitedNumber, lcdNumberItems) {
     var flag = false;
 
     lcdNumberItems.forEach(function (lcdNumberItem) {
-        if (splitedNumber == lcdNumberItem.number) {
+        if (parseInt(splitedNumber) === lcdNumberItem.number) {
             flag = lcdNumberItem;
         }
     });

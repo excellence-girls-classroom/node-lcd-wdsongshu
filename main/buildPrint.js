@@ -1,21 +1,17 @@
 exports.buildPrint = function (printItems) {
     var printText = '';
 
-    var flag = 0;
-
     for (var i = 0; i < printItems.length; i++) {
         var print = '';
 
         printItems.forEach(function (printItem) {
-            var item = printItem.lcdNumber[flag];
+            var item = printItem.lcdNumber[i];
             if (!print) {
                 print += item;
-            }
-            else {
+            }else {
                 print += ' ' + item;
             }
         });
-        flag++;
         printText += print + '\n';
     }
 

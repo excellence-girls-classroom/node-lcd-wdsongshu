@@ -3,15 +3,15 @@ var fixtures = require('../spec/fixtures.js');
 var lcdNumberItems = fixtures.loadAllItems();
 
 exports.printReceipt = function (inputs) {
-    var buildsplitedstring = require('./buildSplitedString');
+    var buildSplitedString = require('./buildSplitedString');
 
-    var splitedString = buildsplitedstring.buildSplitedString(inputs);
-
-    var buildprintitems = require('./buildPrintItems.js');
-
-    var printItems = buildprintitems.buildPrintItems(splitedString, lcdNumberItems);
+    var buildPrintItems = require('./buildPrintItems.js');
 
     var buildPrint = require('./buildPrint.js');
+
+    var splitedString = buildSplitedString.buildSplitedString(inputs);
+
+    var printItems = buildPrintItems.buildPrintItems(splitedString, lcdNumberItems);
 
     var printText = buildPrint.buildPrint(printItems);
 
