@@ -1,6 +1,5 @@
 var buildSplitedString = require('../main/buildSplitedString');
 
-
 describe('unit test', function () {
     var inputs;
 
