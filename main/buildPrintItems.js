@@ -1,4 +1,4 @@
-exports.buildPrintItems = function (splitedString, lcdNumberItems) {
+var flag = function buildPrintItems(splitedString, lcdNumberItems) {
     var printItems = [];
 
     splitedString.forEach(function (splitedNumber) {
@@ -24,3 +24,6 @@ function findLcdNumber(splitedNumber, lcdNumberItems) {
 
     return flag;
 }
+
+
+module.exports.buildPrintItems = flag;

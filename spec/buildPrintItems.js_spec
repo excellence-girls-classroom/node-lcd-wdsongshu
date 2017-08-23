@@ -11,10 +11,11 @@ describe('unit test', function () {
 
             var printItems = buildPrintItems.buildPrintItems(splitedString, lcdNumberItems);
 
-            var expectText = [{
-                number: 9,
-                lcdNumber: ['._.', '|_|', '..|']
-            },
+            var expectText = [
+                {
+                    number: 9,
+                    lcdNumber: ['._.', '|_|', '..|']
+                },
                 {
                     number: 1,
                     lcdNumber: ['...', '..|', '..|']

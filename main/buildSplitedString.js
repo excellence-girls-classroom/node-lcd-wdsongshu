@@ -1,6 +1,6 @@
-exports.buildSplitedString = function (inputs) {
+var flag =function buildSplitedString(inputs) {
 
-    var splitedString = inputs.split('');
-
-    return splitedString;
+    return splitedString = inputs.split('');
 };
+
+module.exports.buildSplitedString = flag;

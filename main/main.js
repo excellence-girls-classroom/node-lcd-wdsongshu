@@ -2,12 +2,13 @@ var fixtures = require('../spec/fixtures.js');
 
 var lcdNumberItems = fixtures.loadAllItems();
 
-exports.printReceipt = function (inputs) {
-    var buildSplitedString = require('./buildSplitedString');
+var buildSplitedString = require('./buildSplitedString');
 
-    var buildPrintItems = require('./buildPrintItems.js');
+var buildPrintItems = require('./buildPrintItems.js');
 
-    var buildPrint = require('./buildPrint.js');
+var buildPrint = require('./buildPrint.js');
+
+var flag =function printLcdNumber(inputs) {
 
     var splitedString = buildSplitedString.buildSplitedString(inputs);
 
@@ -18,3 +19,4 @@ exports.printReceipt = function (inputs) {
     console.log(printText);
 };
 
+module.exports.printLcdNumber = flag;

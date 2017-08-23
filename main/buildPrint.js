@@ -1,4 +1,4 @@
-exports.buildPrint = function (printItems) {
+var flag = function buildPrint(printItems) {
     var printText = '';
 
     for (var i = 0; i < printItems.length; i++) {
@@ -8,7 +8,7 @@ exports.buildPrint = function (printItems) {
             var item = printItem.lcdNumber[i];
             if (!print) {
                 print += item;
-            }else {
+            } else {
                 print += ' ' + item;
             }
         });
@@ -17,3 +17,5 @@ exports.buildPrint = function (printItems) {
 
     return printText;
 };
+
+module.exports.buildPrint =flag ;

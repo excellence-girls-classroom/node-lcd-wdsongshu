@@ -1,4 +1,3 @@
-
 var main = require('../main/main.js');
 
 describe('lcd-digits', function () {
@@ -14,7 +13,7 @@ describe('lcd-digits', function () {
 
                 spyOn(console, 'log');
 
-                main.printReceipt(inputs);
+                main.printLcdNumber(inputs);
 
                 var expectText =
                         '._. ... ._.\n' +
